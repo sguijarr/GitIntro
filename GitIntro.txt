@@ -10,3 +10,24 @@ On MAC directory:
   Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
           new file:   GitIntro/GitIntro.txt
+
+On Repo I add:
+  sguijarr@SGUIJARR-M-82KF GitIntro % git commit -m "add + status"
+    [main 19e37e6] add + status
+     1 file changed, 6 insertions(+)
+    sguijarr@SGUIJARR-M-82KF GitIntro % git status                  
+    On branch main
+    Your branch is ahead of 'origin/main' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+    sguijarr@SGUIJARR-M-82KF GitIntro % git push origin main
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 12 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 498 bytes | 498.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    To https://github.com/sguijarr/GitIntro.git
+       8545bd6..19e37e6  main -> main
+    sguijarr@SGUIJARR-M-82KF GitIntro % 
