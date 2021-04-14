@@ -1,0 +1,6 @@
+On MAC directory:
+  git init
+  git config --global user.name "sguijarr"
+  git config --global user.token "<token>"
+  git clone https://github.com/sguijarr/GitIntro.git
+  
