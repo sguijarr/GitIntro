@@ -31,3 +31,16 @@ On Repo I add:
     To https://github.com/sguijarr/GitIntro.git
        8545bd6..19e37e6  main -> main
     sguijarr@SGUIJARR-M-82KF GitIntro % 
+
+Branches
+Create branch and move to it:
+sguijarr@SGUIJARR-M-82KF GitIntro % git checkout -b staging
+Switched to a new branch 'staging'
+sguijarr@SGUIJARR-M-82KF GitIntro % git status
+On branch staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitIntro.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
