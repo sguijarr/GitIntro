@@ -44,3 +44,85 @@ Changes not staged for commit:
         modified:   GitIntro.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+sguijarr@SGUIJARR-M-82KF GitIntro % git add GitIntro.txt 
+sguijarr@SGUIJARR-M-82KF GitIntro % git commit -m "Create Branch"
+[staging 0a4833d] Create Branch
+ 1 file changed, 13 insertions(+)
+sguijarr@SGUIJARR-M-82KF GitIntro % git diff main                
+diff --git a/GitIntro.txt b/GitIntro.txt
+index 4980116..6a36307 100644
+--- a/GitIntro.txt
++++ b/GitIntro.txt
+@@ -31,3 +31,16 @@ On Repo I add:
+     To https://github.com/sguijarr/GitIntro.git
+        8545bd6..19e37e6  main -> main
+     sguijarr@SGUIJARR-M-82KF GitIntro % 
++
++Branches
++Create branch and move to it:
++sguijarr@SGUIJARR-M-82KF GitIntro % git checkout -b staging
++Switched to a new branch 'staging'
++sguijarr@SGUIJARR-M-82KF GitIntro % git status
++On branch staging
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   GitIntro.txt
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % git status
+On branch staging
+nothing to commit, working tree clean
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % 
+sguijarr@SGUIJARR-M-82KF GitIntro % git checkout main            
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sguijarr@SGUIJARR-M-82KF GitIntro % git diff staging
+diff --git a/GitIntro.txt b/GitIntro.txt
+index 6a36307..4980116 100644
+--- a/GitIntro.txt
++++ b/GitIntro.txt
+@@ -31,16 +31,3 @@ On Repo I add:
+     To https://github.com/sguijarr/GitIntro.git
+        8545bd6..19e37e6  main -> main
+     sguijarr@SGUIJARR-M-82KF GitIntro % 
+-
+-Branches
+-Create branch and move to it:
+-sguijarr@SGUIJARR-M-82KF GitIntro % git checkout -b staging
+-Switched to a new branch 'staging'
+-sguijarr@SGUIJARR-M-82KF GitIntro % git status
+-On branch staging
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   GitIntro.txt
+:...skipping...
+diff --git a/GitIntro.txt b/GitIntro.txt
+index 6a36307..4980116 100644
+--- a/GitIntro.txt
++++ b/GitIntro.txt
+@@ -31,16 +31,3 @@ On Repo I add:
+     To https://github.com/sguijarr/GitIntro.git
+        8545bd6..19e37e6  main -> main
+     sguijarr@SGUIJARR-M-82KF GitIntro % 
+-
+-Branches
+-Create branch and move to it:
+-sguijarr@SGUIJARR-M-82KF GitIntro % git checkout -b staging
+-Switched to a new branch 'staging'
+-sguijarr@SGUIJARR-M-82KF GitIntro % git status
+-On branch staging
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   GitIntro.txt
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+~
+sguijarr@SGUIJARR-M-82KF GitIntro % 
