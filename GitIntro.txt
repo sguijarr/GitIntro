@@ -4,3 +4,9 @@ On MAC directory:
   git config --global user.token "<token>"
   git clone https://github.com/sguijarr/GitIntro.git
   
+  sguijarr@SGUIJARR-M-82KF DEVASC % git add GitIntro/GitIntro.txt 
+  sguijarr@SGUIJARR-M-82KF DEVASC % git status
+  On branch master
+  Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+          new file:   GitIntro/GitIntro.txt
